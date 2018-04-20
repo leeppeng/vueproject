@@ -11,7 +11,7 @@
                     <a hidefocus="true" data-action="feedback" class="s-fc4">意见反馈</a>
                 </p>
                 <p class="s-fc3">
-                    <span class="sep">XX公司版权所有©1997-2018</span>XXXX科技有限公司运营：<a class="s-fc3" href="" target="_blank">浙网文[2015] 0415-135号</a>
+                    <span class="sep">XX公司版权所有©1997-2018</span>XXXX科技有限公司运营
                 </p>
             </div>
         </div>
