@@ -26,26 +26,28 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-ul.choose
-  overflow hidden
-  width 510px
-  float left
-  margin-bottom -8px
-  li
-    float: left
-    margin-right: 10px
-    padding: 0 20px
-    border: 1px solid #e5e5e5
-    background: #fff
-    cursor: pointer
-    box-sizing border-box
-    height 30px
-    margin-bottom 10px
-    line-height 27px
-    text-align center
-    font-size 12px
-  li.active
-    border-color #c00
-    color #c00
+<style lang="scss" scoped>
+ul.choose{
+  overflow: hidden;
+  width: 510px;
+  margin-bottom: -8px;
+  li{
+    float: left;
+    margin-right: 10px;
+    padding: 0 20px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 12px;
+  }
+  li.active{
+    border-color: #c00;
+    color: #c00;
+  }
+}
 </style>

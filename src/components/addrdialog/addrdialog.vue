@@ -74,71 +74,84 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-.m-addressform
-  background #fff
-  padding 10px 30px 30px
-  .ztr
-    margin-top 20px
-    span.th
-      width 61px
-      line-height 32px
-      font-size 14px
-      margin-right 12px
-      vertical-align top
-      text-align right
-      display inline-block
-    .u-txt
-      width 296px
-      height 22px
-      line-height 22px
-      font-size 14px
-      background none
-      border 1px solid #e5e5e5
-      border-radius 0px
-      height 19px
-      margin 0
-      padding 5px 6px 6px
-    p.err
-      display none
-      z-index 1
-      bottom 8px
-      height 16px
-      line-height 16px
-      margin-left 78px
-      margin-top 10px
-      color #e33232
-    p.z-show
-      display block
-  .detail
-    display block
-    width 704px
-    left 0
-    top 124px
-    .area
-      width 610px
-      height 99px
-  .setdefault
-    margin-left 52px
-    margin-top 10px
-    label
-      margin-left 24px
-      display block
-    span
-      position relative
-      color #666
-      margin-left 5px
-      font-size 14px
-  .pdh
-    padding 20px 0 30px 77px
-  .u-btn-save
-    display inline-block
-    padding 0
-    width 160px
-    height 40px
-    line-height 40px
-    font-size 16px
-    text-align center
-    background #cb3b3b
-    color #fff
+<style lang="scss" scoped>
+.m-addressform{
+  background: #fff;
+  padding: 10px 30px 30px;
+  .ztr{
+    margin-top: 20px;
+    span.th{
+      width: 61px;
+      line-height: 32px;
+      font-size: 14px;
+      margin-right: 12px;
+      vertical-align: top;
+      text-align: right;
+      display: inline-block;
+    }
+    .u-txt{
+      width: 296px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 14px;
+      background: none;
+      border: 1px solid #e5e5e5;
+      border-radius: 0px;
+      height: 19px;
+      margin: 0;
+      padding: 5px 6px 6px;
+    }
+    p.err{
+      display: none;
+      z-index: 1;
+      bottom: 8px;
+      height: 16px;
+      line-height: 16px;
+      margin-left: 78px;
+      margin-top: 10px;
+      color: #e33232;
+    }
+    p.z-show{
+      display: block;
+    }
+  }
+  .detail{
+    display: block;
+    width: 704px;
+    left: 0;
+    top: 124px;
+    .area{
+      width: 610px;
+      height: 99px;
+    }
+  }
+  .setdefault{
+    margin-left: 52px;
+    margin-top: 10px;
+    label{
+      margin-left: 24px;
+      display: block;
+    }
+    span{
+      position: relative;
+      color: #666;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+  .pdh{
+    padding: 20px 0 30px 77px;
+  }
+  .u-btn-save{
+    display: inline-block;
+    padding: 0;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    background: #cb3b3b;
+    color: #fff;
+  }
+}
 </style>

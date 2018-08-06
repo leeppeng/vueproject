@@ -1,19 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from 'pages/index'
-import Product from 'pages/product'
-import Detail from 'pages/detail'
-import Cart from 'pages/cart'
-import Comfirm from 'pages/comfirm'
-import User from 'store/user'
-import Order from 'store/my/order'
-import Coupon from 'store/my/coupon'
-import Address from 'store/my/address'
+import Index from 'pages/home/index'
+import Product from 'pages/product/index'
+import Detail from 'pages/detail/index'
+import Cart from 'pages/cart/index'
+import Comfirm from 'pages/comfirm/index'
+import User from 'pages/store/user'
+import Order from 'pages/store/order'
+import Coupon from 'pages/store/coupon'
+import Address from 'pages/store/address'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',
@@ -41,18 +41,18 @@ export default new Router({
     {
       path: '/user',
       component: User,
-      redirect: 'my/order',
+      redirect: '/order',
       children: [
         {
-          path: '/my/order',
+          path: '/order',
           component: Order
         },
         {
-          path: '/my/coupon',
+          path: '/coupon',
           component: Coupon
         },
         {
-          path: '/my/address',
+          path: '/address',
           component: Address
         }
       ]

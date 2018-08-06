@@ -36,7 +36,7 @@ export default {
       }
     },
     RegBtn() {
-      this.$http.get('/api/getLogin').then((res) => {
+      this.$http.get('/api/getLogin/db.json').then((res) => {
         this.$emit('has-log', res.data)
       }, (err) => {
         console.log(err)
@@ -66,6 +66,3 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-
-</style>

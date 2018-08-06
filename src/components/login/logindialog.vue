@@ -9,6 +9,7 @@
       <div class="item">
         <div class="input"><input class="int" type="password" placeholder="请输入密码"  v-model="password"></div>
       </div>
+      <div class="item f-red">{{errorText}}</div>
       <div class="item forget">
         <div class="input text_r">
           <span class="f-fr"><a href="">忘记密码?</a></span>
@@ -32,7 +33,8 @@ export default {
       password: '',
       disabled: true,
       naemFlag: false,
-      psdFlag: false
+      psdFlag: false,
+      errorText: ''
     }
   },
   methods: {
@@ -44,8 +46,18 @@ export default {
       }
     },
     loginBtn() {
-      this.$http.get('/api/getLogin').then((res) => {
-        this.$emit('has-log', res.data)
+      this.$http.post('/api/getLogin', {
+        name: this.name,
+        password: this.password
+      }).then((res) => {
+        // console.log(res.data.data.name)
+        let data = res.data.data
+        // let data = res.data.getLogin
+        if (this.name === data.name && this.password === data.password) {
+          this.$emit('has-log', data)
+        } else {
+          this.errorText = '用户名或密码错误'
+        }
       }, (err) => {
         console.log(err)
       })
@@ -74,6 +86,3 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-
-</style>

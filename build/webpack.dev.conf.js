@@ -15,25 +15,22 @@ const express = require('express')
 
 const app = express()
 var appData = require('../db.json') //加载本地数据文件user
-var getLogin = appData.getLogin //获取对应的本地数据 
+var getLogin = appData.getLogin //获取对应的本地数据
 
 var productData = require('../Dbproduct.json') //加载本地数据文件product
-var getProduct = productData.data //获取对应的本地数据 
-
-var cartData = require('../Dbcart.json') //加载本地数据文件cart
-var getCart = cartData.result //获取对应的本地数据 
+var getProduct = productData.data //获取对应的本地数据
 
 var filterData = require('../Dbfilters.json') //加载本地数据文件filter
-var getFilter = filterData.data //获取对应的本地数据 
+var getFilter = filterData.data //获取对应的本地数据
 
 var addressData = require('../Dbaddress.json') //加载本地数据文件address
-var getAddress = addressData.address //获取对应的本地数据 
+var getAddress = addressData.address //获取对应的本地数据
 var getOrder =  addressData.orderList //获取对应的本地数据-----订单
 
 var cityData = require('../city.json') //加载本地数据文件city
-var getCity = cityData //获取对应的本地数据 
+var getCity = cityData //获取对应的本地数据
 
-var apiRoutes = express.Router()  
+var apiRoutes = express.Router()
 app.use('/api', apiRoutes) // 调用api
 
 const HOST = process.env.HOST
@@ -49,7 +46,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
     before(app) {
-      app.get('/api/getLogin', (req, res) => {
+      app.post('/api/getLogin', (req, res) => {
         res.json({
           errno: 0,
           data: getLogin //数据
@@ -59,12 +56,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           errno: 0,
           data: getProduct //数据
-        })
-      }),
-      app.get('/api/getCart', (req, res) => {
-        res.json({
-          errno: 0,
-          data: getCart //数据
         })
       }),
       app.post('/api/getFilter', (req, res) => {

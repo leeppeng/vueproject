@@ -55,8 +55,8 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-.u-slt
+<style lang="scss" scoped>
+.u-slt{
   width: 198px;
   vertical-align: middle;
   margin-right: 10px;
@@ -65,7 +65,7 @@ export default {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  .curr
+  .curr{
     width: 148px;
     height: 35px;
     line-height: 35px;
@@ -76,27 +76,32 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  .u-icn
+  }
+  .u-icn{
     display: inline-block;
     vertical-align: middle;
     overflow: hidden;
     background: url('../../common/image/icon.png') no-repeat 0 9999px;
-  .u-icn-slt
+  }
+  .u-icn-slt{
     width: 12px;
     height: 8px;
     background-position: -96px -76px;
-  .u-icn-slt
+  }
+  .u-icn-slt{
     position: absolute;
     top: 11px;
     right: 9px;
-  .u-icn-slt
+  }
+  .u-icn-slt{
     position: absolute;
     top: 11px;
     right: 9px
-  ul
-    z-index: 99
-    width: 198px
-    max-height: 136px
+  }
+  ul{
+    z-index: 99;
+    width: 198px;
+    max-height: 136px;
     top: 29px;
     left: -1px;
     position: absolute;
@@ -104,12 +109,16 @@ export default {
     background: #fff;
     border: 1px solid #cdcdcd;
     border-top: none;
-    li
+    li{
       line-height: 26px;
       word-wrap: normal;
-      a
+      a{
         display: block;
         height: 26px;
         padding-left: 9px;
         color: #666
+      }
+    }
+  }
+}
 </style>

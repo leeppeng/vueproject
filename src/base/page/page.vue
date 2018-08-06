@@ -51,7 +51,7 @@ export default {
       }
     },
     leepeng() {
-      // console.log(this.nowIndex, this.limit, this.size)
+      console.log(this.nowIndex)
     }
   },
   computed: {
@@ -78,7 +78,7 @@ export default {
         _step.end = pageCount
       }
       if (_step.start < 1) _step.start = 1
-      console.log(this.size, step, pageCount, _step.end)
+      // console.log(this.size, step, pageCount, _step.end)
       for (let i = _step.start; i <= _step.end; i++) {
         arr.push(i)
       }
@@ -87,12 +87,16 @@ export default {
   },
   watch: {
     pageIndex(val) {
+      console.log('pageIndex', val)
       this.nowIndex = val || 1
     },
     pageSize(val) {
+      console.log('pageSize', val)
       this.limit = val || 10
     },
     total(val) {
+      console.log('total', val)
+      this.nowIndex = 1 // 当数据变更时当前页回到第1页
       this.size = val || 1
     }
   },
@@ -103,36 +107,35 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-.page
-  margin 20px 0
-  padding-bottom 30px
-  text-align center
-  font-size 14px
-  color #666
-  a
-    margin 0 1px 0 2px
-    display inline-block
-    border 1px solid #ededed
-    border-radius 3px
-    vertical-align middle
-    height 30px
-    padding 0 12px
-    background-color #fff
-    line-height 32px
-    &:hover
-      border-color #d33a31
-      color #fff
-      background-color #d33a31
-  a.zbtn
-    font-family cursive
-  a.js-selected, a.js-selected:hover
-    background-color #d33a31
-    color #fff
-    cursor default
-  a.zprv.js-disabled, a.zprv.js-disabled:hover
-    background-color #ccc
-    color #666
-    cursor default
-    border-color #ccc
+<style lang="scss" scoped>
+@import '~common/css/mixin.scss';
+.page{
+  margin: 20px 0;
+  font-size: 14px;
+  @include list(row);
+  justify-content: center;
+  a{
+    margin: 0 1px 0 2px;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    height: 30px;
+    padding: 0 12px;
+    background-color: #fff;
+    line-height: 30px;
+    &:hover{
+      border-color: #d33a31;
+      color: #fff;
+      background-color: #d33a31;
+    }
+  }
+  a.zbtn{
+    font-family: cursive;
+  }
+  a.js-selected, a.js-selected:hover{
+    background-color: #d33a31;
+    color: #fff;
+    border: 1px solid #d33a31;
+    cursor: default;
+  }
+}
 </style>

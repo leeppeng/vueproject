@@ -10,6 +10,10 @@
 <script>
 export default {
   props: {
+    num: {
+      type: Number,
+      default: 1
+    },
     max: {
       type: Number,
       default: 66
@@ -21,7 +25,7 @@ export default {
   },
   data () {
     return {
-      number: this.min
+      number: this.num
     }
   },
   methods: {
@@ -62,33 +66,37 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-.counter-component
-  position relative
-  display inline-block
-  overflow hidden
-  vertical-align middle
-  user-select none
-  .counter-show
-    float left
-    input
-      border none
-      border-top 1px solid #e3e3e3
-      border-bottom 1px solid #e3e3e3
-      height 28px
-      line-height 28px
-      width 60px
-      text-align center
-      outline none
-      text-indent:4px
-  .counter-btn
-    font-size 22px
-    border 1px solid #e3e3e3
-    float left
-    height 30px
-    line-height 30px
-    width 30px
-    text-align center
-    cursor pointer
-    box-sizing border-box
+<style lang="scss" scoped>
+.counter-component{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
+  .counter-show{
+    float: left;
+    input{
+      border: none;
+      border-top: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+      height: 30px;
+      line-height: 30px;
+      width: 60px;
+      text-align: center;
+      outline: none;
+      text-indent:4px;
+      box-sizing: border-box;
+    }
+  }
+  .counter-btn{
+    font-size: 22px;
+    border: 1px solid #e3e3e3;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+}
 </style>
