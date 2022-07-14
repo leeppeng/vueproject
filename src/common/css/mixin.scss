@@ -1,0 +1,46 @@
+@import "./layout.scss";
+
+@mixin btn($size:14px,$color:#fff,$bgcolor:#f04752,$padding:5px,$radius:2px){
+  font-size:$size;
+  color:$color;
+  background:$bgcolor;
+  padding:$padding;
+  border:1px solid $bgcolor;
+  border-radius:$radius;
+  text-align:center;
+  line-height:1;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin list($direction:column) {
+  @include flex($direction);
+}
+
+/* clearfix */
+@mixin clearfix {
+  &:after {
+      clear: both;
+      content: '.';
+      display: block;
+      height: 0;
+      line-height: 0;
+      overflow: hidden;
+  }
+  *height: 1%;
+}
+
+/* 单行ellipsis */
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*多行google */
+@mixin moreellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

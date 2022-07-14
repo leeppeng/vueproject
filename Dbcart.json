@@ -1,0 +1,32 @@
+{
+  "code": 200, 
+  "result": {
+      "num": 1, 
+      "itemDatas": [
+          {
+              "cartId": 8549929, 
+              "addMoney": 169.00,
+              "status": 1,
+              "num": 1,
+              "attrValue": "红色",
+              "picUrl": "http://p3.music.126.net/gno8JhDcSeUv0TvOoZRntw==/18991864347165651.jpg",
+              "itemMoney": 169.00, 
+              "buyedNum": 0, 
+              "skuStatus": 0, 
+              "productName": "漫步者W280X 无线蓝牙入耳式运动耳机磁吸耳塞"
+          },
+          {
+            "cartId": 8549930, 
+            "addMoney": 20.00,
+            "status": 1,
+            "num": 5,
+            "attrValue": "米白版",
+            "picUrl": "http://p4.music.126.net/B-uIwMQqq5siS6WBIeU0Qg==/3310629519183105.jpg",
+            "itemMoney": 20.00, 
+            "buyedNum": 0, 
+            "skuStatus": 0, 
+            "productName": "定制帆布袋"
+        }
+      ]
+  }
+}

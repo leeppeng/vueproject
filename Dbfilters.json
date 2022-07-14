@@ -1,0 +1,166 @@
+{
+	"code": 200,
+	"data": [
+    {
+      "title": "品牌",
+      "value": [{
+        "id": 2805155,
+        "brandSort":101000,
+        "brandName": "铁三角"
+      }, {
+        "id": 1042064,
+        "brandSort":102000,
+        "brandName": "魔声"
+      }, {
+        "id": 687002,
+        "brandSort":103000,
+        "brandName": "森海塞尔"
+      }, {
+        "id": 1198033,
+        "brandSort":104000,
+        "brandName": "漫步者（EDIFIER）"
+      }, {
+        "id": 2256017,
+        "brandSort":105000,
+        "brandName": "LEEPENG"
+      }, {
+        "id": 1010032,
+        "brandSort":106000,
+        "brandName": "先锋"
+      }, {
+        "id": 2426001,
+        "brandSort":107000,
+        "brandName": "JBL"
+      }, {
+        "id": 2905011,
+        "brandSort":108000,
+        "brandName": "1MORE"
+      }, {
+        "id": 3024001,
+        "brandSort":109000,
+        "brandName": "AKG"
+      }, {
+        "id": 3195015,
+        "brandSort":110000,
+        "brandName": "QCY"
+      }, {
+        "id": 1200017,
+        "brandSort":111000,
+        "brandName": "Beats"
+      }, {
+        "id": 1195027,
+        "brandSort":112000,
+        "brandName": "拜亚动力"
+      }, {
+        "id": 1918001,
+        "brandSort":113000,
+        "brandName": "索尼（SONY）"
+      }, {
+        "id": 2003004,
+        "brandSort":114000,
+        "brandName": "飞利浦（Philips）"
+      }, {
+        "id": 556080,
+        "brandSort":115000,
+        "brandName": "猫王"
+      }, {
+        "id": 1945001,
+        "brandSort":116000,
+        "brandName": "山灵"
+      }, {
+        "id": 617009,
+        "brandSort":117000,
+        "brandName": "三星"
+      }, {
+        "id": 665030,
+        "brandSort":118000,
+        "brandName": "雷蛇(Razer)"
+      }, {
+        "id": 1864003,
+        "brandSort":119000,
+        "brandName": "Kindle"
+      }, {
+        "id": 568059,
+        "brandSort":120000,
+        "brandName": "BOSE"
+      }, {
+        "id": 1063005,
+        "brandSort":121000,
+        "brandName": "B&O"
+      }, {
+        "id": 1026001,
+        "brandSort":122000,
+        "brandName": "洛克（ROCK）"
+      }, {
+        "id": 876016,
+        "brandName": "唱吧"
+      }, {
+        "id": 2625009,
+        "brandSort":123000,
+        "brandName": "杰伟世（JVC）"
+      }, {
+        "id": 1562013,
+        "brandSort":124000,
+        "brandName": "爱国者（aigo）"
+      }, {
+        "id": 1048020,
+        "brandSort":125000,
+        "brandName": "happyplugs"
+      }, {
+        "id": 3122001,
+        "brandSort":126000,
+        "brandName": "骷髅头（skullcandy）"
+      }, {
+        "id": 3086001,
+        "brandSort":127000,
+        "brandName": "第一卫"
+      }, {
+        "id": 2642011,
+        "brandSort":128000,
+        "brandName": "先锋（Pioneer）"
+      }, {
+        "id": 969023,
+        "brandSort":129000,
+        "brandName": "熊猫PANDA"
+      }, {
+        "id": 3146259,
+        "brandSort":130000,
+        "brandName": "击音"
+      }]
+    }, {
+      "title": "分类",
+      "value": [{
+        "id": 2233001,
+        "sort":2001000,
+        "kindname": "耳机耳麦"
+      }, {
+        "id": 2073001,
+        "sort":2002000,
+        "kindname": "播放器"
+      }, {
+        "id": 2260009,
+        "sort":2003000,
+        "kindname": "音箱音响"
+      }, {
+        "id": 2305001,
+        "sort":2004000,
+        "kindname": "数码配件"
+      }]
+    }, {
+		"title": "价格",
+		"value": [{
+			"id": 1,
+			"begin": 0,
+			"end": 1666
+		}, {
+			"id": 2,
+			"begin": 1667,
+			"end": 3332
+		}, {
+			"id": 3,
+			"begin": 3333,
+			"end": 4998
+		}]
+	}
+]
+}

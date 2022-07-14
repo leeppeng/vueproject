@@ -1,0 +1,61 @@
+{
+  "code": 200,
+	"address": [
+    {
+      "id": 10001,
+      "userId": 108017691,
+      "name": "李鹏",
+      "cellphone": "18763960633",
+      "detailAddress": "香城镇1",
+      "provinceCity": "山东省济宁市邹城市",
+      "defaultAddr": true
+    },
+    {
+      "id": 10002,
+      "userId": 108017691,
+      "name": "李鹏",
+      "cellphone": "18763960633",
+      "detailAddress": "香城镇2",
+      "provinceCity": "山东省济宁市邹城市",
+      "defaultAddr": false
+    },
+    {
+      "id": 10003,
+      "userId": 108017691,
+      "name": "李鹏",
+      "cellphone": "18763960633",
+      "detailAddress": "香城镇3",
+      "provinceCity": "山东省济宁市邹城市",
+      "defaultAddr": false
+    }
+  ],
+  "orderList": [
+    {
+      "id": 100001,
+      "time": "2017-04-09 15:24:06",
+      "price": 199,
+      "name": "苹果快充数据线",
+      "pic": "pic/pro1.jpg",
+      "num": 2,
+      "statr": "paying"
+    },
+    {
+      "id": 100002,
+      "time": "2017-04-20 15:24:06",
+      "price": 199,
+      "name": "苹果快充数据线",
+      "pic": "pic/pro2.jpg",
+      "num": 2,
+      "statr": "toship"
+    },
+    {
+      "id": 100003,
+      "time": "2017-04-20 15:24:06",
+      "price": 199,
+      "name": "苹果快充数据线",
+      "pic": "pic/pro3.jpg",
+      "num": 1,
+      "statr": "receipt"
+    }
+  ]
+}
